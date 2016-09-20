@@ -33,7 +33,7 @@ plot(dates$DateTime, dates$Sub_metering_1, type = "l", xlab = "", ylab = "Energy
 lines(dates$DateTime, dates$Sub_metering_2, col = "red")
 lines(dates$DateTime, dates$Sub_metering_3, col = "blue")
 legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
-       border = "black", col = plot_colors, lwd = c(2.5, 2.5, 2.5), pt.cex = .75, x.intersp = 4, y.intersp = 1.25, adj = .3)
+       border = "black", col = plot_colors, lwd = c(2.5, 2.5, 2.5))
 #bottom right
 plot(dates$DateTime, dates$Global_reactive_power, xlab =  "datetime", ylab = "Global_reactive_power", type = "l")
 
